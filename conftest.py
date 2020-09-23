@@ -22,7 +22,7 @@ def email_test_code():
 
 
 @fixture(scope="session", params=[webdriver.Chrome, webdriver.Edge, webdriver.Firefox])
-def chrome_driver(request):
+def web_driver(request):
     driver = request.param
     drvr = driver()
     drvr.implicitly_wait(10)
